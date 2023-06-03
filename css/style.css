@@ -24,6 +24,10 @@ body {
   display: none !important;
 }
 
+.d-block {
+  display: block !important;
+}
+
 .vibrate {
   animation: shake 0.6s;
 }
@@ -116,6 +120,7 @@ body {
 
 .content .form-error {
   color: #ff6257;
+  display: block;
 }
 
 .form-email {
@@ -128,6 +133,18 @@ body {
 
 .content form .form-error {
   display: none;
+}
+
+.content form.error .form-email,
+.content form.error .form-email:focus {
+  background-color: #ff625733;
+  border: 1px solid #ff6257;
+  color: #36384e;
+  display: block;
+}
+
+.content form.error .form-email::placeholder {
+  color: #ff6257;
 }
 
 .form-button {
